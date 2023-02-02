@@ -4,6 +4,6 @@ def fibRec(n):
   else: return fibRec(n-1) + fibRec(n-2)
   
 for i in range(1, 8):
-  print fibRec(1)
+  print(fibRec(1))
   
 #Exemplo de recursão
