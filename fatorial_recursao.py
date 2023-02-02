@@ -4,3 +4,5 @@ def fatRecursivo(num):
   else:
     return num * fatRecursivo(num-1)
   
+n = int(input())
+print(fatRecursivo(n))
