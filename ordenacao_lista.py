@@ -26,3 +26,21 @@ for i in range(len(lista)-1):
         if lista[r] < lista[r-1]:
             lista[r], lista[r-1] = lista[r-1], lista[r]
 print(lista)
+
+
+# inserção direta:
+
+def insSort(lista):
+    for i in range(1, len(lista)):
+        chave = lista[i]
+        j = i
+        while j > 0 and lista[j-1]>chave:
+            lista[j] = lista[j-1]
+            j -= 1
+        lista[j] = chave
+    return lista
+
+lista = list
+lista = [27, 12, 20, 37, 18, 17, 15]
+print(insSort(lista))
+
