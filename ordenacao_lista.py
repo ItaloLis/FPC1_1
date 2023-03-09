@@ -44,3 +44,19 @@ lista = list
 lista = [27, 12, 20, 37, 18, 17, 15]
 print(insSort(lista))
 
+
+#Inserção por incremento
+
+def shellSort(nums):
+    n = len(nums)
+    h = int(n/2)
+    while h>0:
+        for i in range(h, n):
+            c = nums[i]
+            j = i
+            while j >=  and c < nums[j-h]:
+                nums[j] = nums[j-h]
+                j = j-h
+                nums[j] = c
+        h = int(h/2.2)
+        
